@@ -19,7 +19,7 @@ jobs:
       - name: hello world
         run: echo "Hello worldddd"
       - name: ls 
-        run: ls
+        run: ls -la
       - name: pwd
         run: pwd
 
