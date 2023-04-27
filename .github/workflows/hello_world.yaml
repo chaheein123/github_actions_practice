@@ -8,7 +8,7 @@ on:
   pull_request:
     branches:
       - master
-      
+
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: hello world
-        run: echo "Hello worldddd"
+        run:
+          - echo "Hello worldddd"
 
 
 
