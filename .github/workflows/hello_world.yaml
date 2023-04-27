@@ -18,7 +18,9 @@ jobs:
       # - uses: actions/checkout@v2
       - name: hello world
         run: echo "Hello worldddd"
-      - name: yoyoyo 
-        run: echo "byebyebye"
+      - name: ls 
+        run: ls
+      - name: pwd
+        run: pwd
 
 
