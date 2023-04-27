@@ -19,6 +19,7 @@ jobs:
       - name: hello world
         run:
           - echo "Hello worldddd"
+          - echo "bye world"
 
 
 
