@@ -17,8 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: hello world
-        run: echo "Hello worldddd"
-        run: pwd 
-        run: ls -la
+      - run: echo "Hello worldddd"
+      - run: pwd 
+      - run: ls -la
 
 
