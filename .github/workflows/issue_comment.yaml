@@ -12,8 +12,17 @@ jobs:
         # env:
         #   GITHUB_CONTEXT: ${{ toJson(github) }}
         # run: echo "$GITHUB_CONTEXT" | jq
-        run: echo '${{ toJSON(github.event) }}'
+        run: echo "${{ toJSON(github.event) }}"
         shell: bash
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            This is a multi-line test comment
+            - With GitHub **Markdown** :sparkles:
+            - Created by [create-or-update-comment][1]
+            
 
 
   
